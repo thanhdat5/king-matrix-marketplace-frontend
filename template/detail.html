@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marketplace</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;800&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header class="km-header">
+        <div class="container">
+            <div class="km-header-inner">
+                <a href="#" class="km-logo">
+                    <img src="https://kingmatrix.ai/images/logo.png" alt="" />
+                </a>
+                <div class="d-flex">
+                    <button type="button" class="km-btn-outline ms-2" data-bs-toggle="modal"
+                        data-bs-target="#connectWalletModal">
+                        <span>Connect Wallet</span>
+                    </button>
+                    <div class="dropdown">
+                        <button type="button" class="km-btn-outline px-3 ms-2 dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <span>0xdAD7...9DCCC</span>
+                            <span class="icon">
+                                <img src="https://nft-square.io/static/media/logo192.d35e460c9a055cd41734.png" alt="" />
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li>
+                                <a class="dropdown-item active" href="#">
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    <span>Profile infomation</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-compass fa-fw"></i>
+                                    <span>My Box</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-gem fa-fw"></i>
+                                    <span>My Inventory</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-chess-queen fa-fw"></i>
+                                    <span>Genesis Membership</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-folder fa-fw"></i>
+                                    <span>Library</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa-regular fa-message fa-fw"></i>
+                                    <span>Welcome NFT Square</span>
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item logout" href="#">
+                                    <i class="fa-solid fa-power-off fa-fw"></i>
+                                    <span>Log out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="km-main">
+        <!-- .km-breadcrumb -->
+        <div class="km-breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="products.html">Product</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">N3w Box</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- end .km-breadcrumb -->
+
+        <!-- .km-nft -->
+        <div class="km-nft">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xl-3">
+                        <div class="km-sidebar me-lg-3 me-xl-0">
+                            <div class="km-card km-cat">
+                                <div class="km-cat-title">New Arrivals</div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/13122d61be0f4abc8c0c33ef9078a0f8iconweb3immersivebox.png"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">Web3 Immersive Box</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/19a39583cb52428782a41aa49d91858eiconboxnft.png"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">NFT Box</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/ad15a775864041f58f91c5663c0c3f29Genesis%20Membership.jpg"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">Genesis Membership</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/f901af582c0f4155acadda856a9f82ddNew%20arrival%20Welcome%20NFT%20Square%20resize.jpg"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">Welcome NFT KingMatrix</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="km-card km-cat">
+                                <div class="km-cat-title">Shop By Product Line</div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/03bafc61b1874f86b60fa15c62a82528Mystery%20box%20resize%2017.jpg"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">NFT Box</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/e1f7a61d67c74022b6d783f62d7eb29cdigital%20collectible%20resize%2018.jpg"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">Digital Collectibles</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/17be43d7e7e94fc6bc01222b1c2b9e99prediction%20resize%2016.jpg"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">Prediction</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icon">
+                                                <img src="https://api.nft-square.io/files/ecommerce/ca17334907a548b5b576ab9030e7e232token%20gate%20resize%2020.jpg"
+                                                    alt="" />
+                                            </span>
+                                            <span class="name">Token Gated</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xl-9">
+                        <div class="km-nft-content">
+                            <!-- Info -->
+                            <div class="km-card">
+                                <div class="km-nft-info">
+                                    <div class="row gx-lg-5">
+                                        <div class="col-md-6">
+                                            <div class="km-nft-media">
+                                                <video loop autoplay playsinline src="assets/videos/box.mp4"></video>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="km-nft-summary">
+                                                <h1>N3W BOX</h1>
+                                                <div class="km-nft-tag">
+                                                    <span>New</span>
+                                                </div>
+                                                <div class="km-nft-price">
+                                                    <label>Price:</label>
+                                                    <del>99 USDT/</del>
+                                                    <span>69 USDT</span>
+                                                </div>
+                                                <div class="km-nft-quantity">
+                                                    <label>Quantity:</label>
+                                                    <div class="km-nft-quantity-input">
+                                                        <button type="button"
+                                                            class="km-btn-outline"><span>-</span></button>
+                                                        <span class="input-control">
+                                                            <input type="number" value="1" />
+                                                        </span>
+                                                        <button type="button"
+                                                            class="km-btn-outline"><span>+</span></button>
+                                                    </div>
+                                                </div>
+                                                <div class="km-nft-warning">
+                                                    You need to <button type="button">connect wallet</button> with
+                                                    account to buy NFTs.
+                                                </div>
+                                                <div class="km-nft-action">
+                                                    <button type="button" class="km-btn w-100">
+                                                        <span>Buy</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Brand -->
+                            <div class="km-card">
+                                <div class="km-nft-brand">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-5">
+                                            <a href="#" class="km-brand">
+                                                <span class="icon">
+                                                    <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                        alt="" />
+                                                </span>
+                                                <span class="name">NFT Square</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="km-brand-info">
+                                                <label>Utilities:</label>
+                                                <span>NFT Box</span>
+                                            </div>
+                                            <div class="km-brand-info">
+                                                <label>Industry:</label>
+                                                <span>Entertainment, Social</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product Summary -->
+                            <div class="km-card">
+                                <div class="km-card-title">Product Summary</div>
+                                <div class="km-card-body">
+                                    <p>The N3W Box is a great starting point for you to explore and learn more about the
+                                        world of Web3. By owning these NFTs, you can learn more about the fundamentals
+                                        of Web3 and start your journey into the world of Web3.</p>
+                                    <p>The N3W box contains:</p>
+                                    <ul>
+                                        <li>NFTs which let you have access to a knowledge hub about Web3 philosophy and
+                                            guide you to the most basic Web3 experiences.</li>
+                                        <li>An NFT Square's POAP with future value</li>
+                                        <li>Beautiful artistic NFT Box</li>
+                                        <li>An amount of cryptocurrencies to start your journey (reveal in your wallet
+                                            within a few hours).</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- NFT Metadata -->
+                            <div class="km-card">
+                                <div class="km-card-title">NFT Metadata</div>
+                                <div class="km-card-body">
+                                    <a href="#">
+                                        <span>View now</span>
+                                        <svg class="w-6 h-6 sm:h-4 sm:w-4" viewBox="0 0 24 24" fill="currentColor"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                d="M4.232 7.232A2.5 2.5 0 0 1 6 6.5h5a.5.5 0 0 1 0 1H6A1.5 1.5 0 0 0 4.5 9v9A1.5 1.5 0 0 0 6 19.5h9a1.5 1.5 0 0 0 1.5-1.5v-5a.5.5 0 0 1 1 0v5a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 18V9a2.5 2.5 0 0 1 .732-1.768Z">
+                                            </path>
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                d="M20.354 3.646a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.708-.708l10-10a.5.5 0 0 1 .708 0Z">
+                                            </path>
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                d="M14.5 4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V4.5H15a.5.5 0 0 1-.5-.5Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Related Product -->
+                            <div class="km-card">
+                                <div class="km-card-title">Related Product</div>
+                                <div class="km-card-body">
+                                    <div class="row row-cols-xl-4 row-cols-md-3 row-cols-2">
+                                        <div class="col">
+                                            <div class="km-nft-card">
+                                                <a href="#" class="brand">
+                                                    <span class="icon">
+                                                        <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                            alt="" />
+                                                    </span>
+                                                    <span class="name">NFT Square</span>
+                                                </a>
+                                                <a href="#" class="info">
+                                                    <div class="media">
+                                                        <video loop autoplay playsinline
+                                                            src="assets/videos/box.mp4"></video>
+                                                    </div>
+                                                    <div class="title">Fam Legend - Camera</div>
+                                                    <div class="description">
+                                                        Camera is an important device, but depending on the purpose and
+                                                        idea of the film, the film crew will choose the appropriate one.
+                                                        The camera is designed to record consecutive images on a roll of
+                                                        film that is re positioned after each exposure. It is also an
+                                                        indispensable tool to convey content as well as key messages of
+                                                        the film to the audience.
+                                                    </div>
+                                                    <div class="price">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <label>Price:</label>
+                                                            <b>$11</b>
+                                                        </div>
+                                                        <span>NFT Square</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="km-nft-card">
+                                                <a href="#" class="brand">
+                                                    <span class="icon">
+                                                        <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                            alt="" />
+                                                    </span>
+                                                    <span class="name">NFT Square</span>
+                                                </a>
+                                                <a href="#" class="info">
+                                                    <div class="media">
+                                                        <video loop autoplay playsinline
+                                                            src="assets/videos/box.mp4"></video>
+                                                    </div>
+                                                    <div class="title">Fam Legend - Camera</div>
+                                                    <div class="description">
+                                                        Camera is an important device, but depending on the purpose and
+                                                        idea of the film, the film crew will choose the appropriate one.
+                                                        The camera is designed to record consecutive images on a roll of
+                                                        film that is re positioned after each exposure. It is also an
+                                                        indispensable tool to convey content as well as key messages of
+                                                        the film to the audience.
+                                                    </div>
+                                                    <div class="price">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <label>Price:</label>
+                                                            <b>$11</b>
+                                                        </div>
+                                                        <span>NFT Square</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="km-nft-card">
+                                                <a href="#" class="brand">
+                                                    <span class="icon">
+                                                        <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                            alt="" />
+                                                    </span>
+                                                    <span class="name">NFT Square</span>
+                                                </a>
+                                                <a href="#" class="info">
+                                                    <div class="media">
+                                                        <video loop autoplay playsinline
+                                                            src="assets/videos/box.mp4"></video>
+                                                    </div>
+                                                    <div class="title">Fam Legend - Camera</div>
+                                                    <div class="description">
+                                                        Camera is an important device, but depending on the purpose and
+                                                        idea of the film, the film crew will choose the appropriate one.
+                                                        The camera is designed to record consecutive images on a roll of
+                                                        film that is re positioned after each exposure. It is also an
+                                                        indispensable tool to convey content as well as key messages of
+                                                        the film to the audience.
+                                                    </div>
+                                                    <div class="price">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <label>Price:</label>
+                                                            <b>$11</b>
+                                                        </div>
+                                                        <span>NFT Square</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="km-nft-card">
+                                                <a href="#" class="brand">
+                                                    <span class="icon">
+                                                        <img src="https://api.nft-square.io/files/ecommerce/61538244bd514356ba17afa3c353235bebeb9615203348c9b109c40b14c14eacnftsquare%20favicon.png"
+                                                            alt="" />
+                                                    </span>
+                                                    <span class="name">NFT Square</span>
+                                                </a>
+                                                <a href="#" class="info">
+                                                    <div class="media">
+                                                        <video loop autoplay playsinline
+                                                            src="assets/videos/box.mp4"></video>
+                                                    </div>
+                                                    <div class="title">Fam Legend - Camera</div>
+                                                    <div class="description">
+                                                        Camera is an important device, but depending on the purpose and
+                                                        idea of the film, the film crew will choose the appropriate one.
+                                                        The camera is designed to record consecutive images on a roll of
+                                                        film that is re positioned after each exposure. It is also an
+                                                        indispensable tool to convey content as well as key messages of
+                                                        the film to the audience.
+                                                    </div>
+                                                    <div class="price">
+                                                        <div class="d-flex align-items-center justify-content-between">
+                                                            <label>Price:</label>
+                                                            <b>$11</b>
+                                                        </div>
+                                                        <span>NFT Square</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .km-nft -->
+    </main>
+
+    <footer class="km-footer">
+        <div class="km-footer-top">
+            <div class="container">
+                <div class="gx-lg-5 row align-items-end">
+                    <div class="order-1 order-lg-0 col-lg-4">
+                        <div class="logo">
+                            <img src="https://kingmatrix.ai/images/logo.png" alt="King Matrix" />
+                        </div>
+                        <div class="info">The world's first 100% decentralized matrix platform</div>
+                    </div>
+                    <div class="order-0 order-lg-2 mb-3 mb-lg-0 col-lg-8">
+                        <div class="km-net">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a target="blank"
+                                        href="https://bscscan.com/token/0x30837ab086F954f0bA4eFD03854c5aB92f27e4Db">
+                                        <div class="icon">
+                                            <svg viewBox="0 0 22 22" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M10.972 0 4.605 6.428 6.377 8.2l6.376-6.377L10.973 0Zm4.605 3.327 3.03 3.104-12.23 12.23 12.23-12.23-3.03-3.104ZM3.346 15.631l1.518 1.518-1.518-1.518ZM15.571 4.599 4.606 15.629l1.77 1.77L17.352 6.423 15.571 4.6ZM0 11.024l1.776-1.818 1.776 1.818-1.776 1.777L0 11.024Zm20.177-3.096h.001ZM7.947 20.23ZM20.172 9.2 9.206 20.229 10.976 22l10.977-10.976-1.781-1.825Z">
+                                                </path>
+                                            </svg>
+                                        </div>
+                                        <span>King Matrix Token</span>
+                                    </a>
+                                </div>
+                                <div class="mt-3 mt-md-0 col-md-6">
+                                    <a target="default" href="mailto:kingmatrix.ai@gmail.com">
+                                        <div class="icon">
+                                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#a)" stroke="#fff" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                    <path
+                                                        d="M17 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zM9 7h6m-6 4h6m-6 4h4">
+                                                    </path>
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="a">
+                                                        <path fill="#fff" d="M0 0h24v24H0z"></path>
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </div>
+                                        <span>King Matrix Support</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="km-footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="copyright">
+                        <span>© 2023 All Rights Reserved.</span><br />
+                        <a href="#">v.1.1.7</a>
+                    </div>
+                    <div class="socials">
+                        <a href="https://t.me/kingmatrixtreasures" target="blank">
+                            <img src="https://kingmatrix.ai/images/icon-telegram.svg" alt="" />
+                        </a>
+                        <a href="https://twitter.com/kmtreasures" target="blank">
+                            <img src="https://kingmatrix.ai/images/icon-twitter.svg" alt="" />
+                        </a>
+                        <a href="https://youtube.com/@KingMatrixTreasures" target="blank">
+                            <img src="https://kingmatrix.ai/images/icon-youtube.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="km-select">
+                        <div class="selected">
+                            <img src="https://kingmatrix.ai/en.svg" alt="" />
+                            <span class="d-none d-xl-block">English</span>
+                            <svg viewBox="0 0 8 4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 0H0l4 4 4-4Z"></path>
+                            </svg>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="https://kingmatrix.ai/en.svg" alt="" />
+                                <span>English</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Connect Wallet Modal -->
+    <div class="modal fade km-modal" id="connectWalletModal" tabindex="-1" aria-labelledby="connectWalletModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h6 class="mb-3 text-white text-center">
+                        <b>WELCOME TO</b>
+                    </h6>
+                    <div class="text-center mb-5">
+                        <img src="https://kingmatrix.ai/hp1.png?v=1" alt="" class="img-fluid" />
+                    </div>
+                    <button type="button" class="km-connect km-btn w-100 mb-4">
+                        <span class="icon">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/free-metamask-2728406-2261817.png"
+                                alt="" />
+                        </span>
+                        <span>Continue with Metamask</span>
+                    </button>
+                    <button type="button" class="km-connect km-btn-outline w-100">
+                        <span class="icon">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2504/2504739.png" alt="" />
+                        </span>
+                        <span>Continue with Google</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
